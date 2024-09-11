@@ -8,3 +8,7 @@ from django.template import loader
 def members(request):
   template = loader.get_template('members.html')
   return HttpResponse(template.render())
+
+def projact(request):
+  template = loader.get_template('projact.html')
+  return HttpResponse(template.render())
